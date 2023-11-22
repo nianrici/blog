@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Picture from '../components/Gallery.astro';
+
+const pageTitle = 'Galería de Imágenes';
+---
+
+<BaseLayout> 
+  <h1 class="gallery-title">{pageTitle}</h1>
+  <div class="gallery">
+    
+    <Picture />
+  </div>
+</BaseLayout>

@@ -1,0 +1,18 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  images: {
+    src: string;
+    alt: string;
+  }[];
+}
+
+export const GalleryLayout = ({ images }: Props) => (
+  <>
+    {images.map(({ src, alt }) => (
+      <img src={src} alt={alt} />
+    ))}
+  </>
+);
+---

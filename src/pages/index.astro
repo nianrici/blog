@@ -1,16 +1,14 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Greeting from '../components/Greeting.jsx';
+const pageTitle = "Página de inicio";
 ---
+<BaseLayout pageTitle={pageTitle}>
+  <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
+  <p>Sí, ya sé, otro más en la lista interminable de blogs sobre tecnología. Pero, ¿qué puedo decir? Me gusta compartir mis conocimientos y experiencias con el mundo.</p>
+  <p>Si estás aquí, probablemente estés interesado en la seguridad informática, la creación de tu propio laboratorio del mal en casa, en Linux y/o en Emacs. O tal vez solo estás aquí porque te perdiste en el inmenso mar de contenido de la web y acabaste aquí por error (<em>Google, yo te maldigoooooo!!!!</em>). En cualquier caso, estás en el lugar correcto.</p>
+  <p>Este blog no es el más innovador, ni el más divertido, ni el más ingenioso, pero espero que al menos sea útil. Aquí encontrarás información sobre lo que vaya aprendiendo sobre amenazas de ciberseguridad, consejos prácticos para proteger tus dispositivos, tutoriales para crear tu propio homelab, y trucos para sacarle el máximo provecho a Linux y Emacs.</p>
+  <p>No esperes encontrar aquí la solución a todos tus problemas tecnológicos, pero espero que encuentres algo de valor en cada artículo que publique. He montado este tinglado para afianzar mis conocimientos y con un poco de suerte, ayudarte.</p>
+  <p>En fin, gracias por visitar mi blog. Espero que encuentres algo que te guste y que vuelvas pronto.</p>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+</BaseLayout>

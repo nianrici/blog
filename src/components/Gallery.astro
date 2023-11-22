@@ -1,0 +1,10 @@
+---
+import { Picture } from "astro:assets";
+const allImages = await Astro.glob('../assets/images/*.{jpg,png,svg}');
+
+export { allImages };
+---
+
+{allImages.map((image) => (
+  <a href={image.slug}><Picture src={image.default} alt=""/></a>
+))}
