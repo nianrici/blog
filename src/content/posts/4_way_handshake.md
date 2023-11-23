@@ -4,7 +4,7 @@ description: 'Breve introducción al 4whs'
 pubDate: 2023-01-24
 author: 'Nicolas Riquelme'
 image: 
-    url: '/src/assets/images/3-way-handshake-pixel-art-456777264.png'
+    url: '/public/images/3-way-handshake-pixel-art-456777264.png'
     alt: ""
 tags: ["security", "networking", "tcp-ip"]
 ---

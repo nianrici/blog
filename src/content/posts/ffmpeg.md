@@ -4,7 +4,7 @@ description: '¿Y eso que es?'
 pubDate: 2022-12-14
 author: 'Nicolas Riquelme'
 image: 
-    url: '/src/assets/images/pixel-art-bat-signal-.png'
+    url: '/public/images/pixel-art-bat-signal-.png'
     alt: ""
 tags: ["CLI", "video", "knowledge base"]
 ---

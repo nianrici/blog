@@ -4,7 +4,7 @@ description: 'Script para visualizar las fuentes en Emacs'
 pubDate: 2023-03-08
 author: 'Nicolas Riquelme'
 image: 
-    url: '/src/assets/images/a-computer-in-the-style-of-hayao-miyazaki-.png'
+    url: '/public/images/a-computer-in-the-style-of-hayao-miyazaki-.png'
     alt: ""
 tags: ["emacs", "pro-tip"]
 ---

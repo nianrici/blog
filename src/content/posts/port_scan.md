@@ -4,7 +4,7 @@ description: "Resumen de las técnicas de escaneo de puertos"
 pubDate: 2023-01-04
 author: 'Nicolas Riquelme'
 image: 
-    url: '/src/assets/images/a-hacker-in-the-style-of-humberto-ramos-.png'
+    url: '/public/images/a-hacker-in-the-style-of-humberto-ramos-.png'
     alt: ""
 tags: ["network", "ports", "puertos", "nmap", "tcp-ip", "scanning", "scripts"]
 ---

@@ -4,7 +4,7 @@ description: 'Introducción al comando Find y cosas que puede hacer a parte de b
 pubDate: 2023-11-22
 author: 'Nicolas Riquelme'
 image: 
-    url: '/src/assets/images/find.png'
+    url: '/public/images/find.png'
     alt: ""
 tags: ["find", "posix", "tips", "linux", "basics" ]
 ---

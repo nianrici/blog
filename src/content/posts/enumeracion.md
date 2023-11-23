@@ -4,7 +4,7 @@ description: '¿Y eso que es?'
 pubDate: 2022-12-18
 author: 'Nicolas Riquelme'
 image: 
-    url: '/src/assets/images/a-computer-in-the-style-of-arthur-suydam-.png'
+    url: '/public/images/a-computer-in-the-style-of-arthur-suydam-.png'
     alt: ""
 tags: ["security", "conceptos", "knowledge base", "fases"]
 ---

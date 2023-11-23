@@ -4,7 +4,7 @@ description: 'Introducción a las banderas del protocolo TCP/IP'
 pubDate: 2022-10-24
 author: 'Nicolas Riquelme'
 image: 
-    url: '/src/assets/images/fun-with-flags.png'
+    url: '/public/images/fun-with-flags.png'
     alt: ""
 tags: ["security", "networking", "tcp-ip"]
 ---

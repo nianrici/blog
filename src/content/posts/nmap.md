@@ -4,7 +4,7 @@ description: ""
 pubDate: 2023-01-03
 author: 'Nicolas Riquelme'
 image: 
-    url: '/src/assets/images/nmap.png'
+    url: '/public/images/nmap.png'
     alt: ""
 tags: ["network", "ports", "puertos", "nmap", "tcp-ip", "scanning", "scripts", "knowledge base"]
 ---

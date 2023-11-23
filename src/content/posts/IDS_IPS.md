@@ -4,7 +4,7 @@ description: '¿Y eso que es?'
 pubDate: 2023-01-23
 author: 'Nicolas Riquelme'
 image: 
-    url: '/src/assets/images/ids-ips.png'
+    url: '/public/images/ids-ips.png'
     alt: ""
 tags: ["security", "herramientas", "knowledge base", "networking", "blue team"]
 ---

@@ -4,7 +4,7 @@ description: 'Instalación y configuración de Suricata en Debian y derivados'
 pubDate: 2022-02-22
 author: 'Nicolas Riquelme'
 image: 
-    url: '/src/assets/images/suricata.png'
+    url: '/public/images/suricata.png'
     alt: ""
 tags: ["debian", "ids", "ips", "tutorial" ]
 ---

@@ -4,7 +4,7 @@ description: ""
 pubDate: 2023-01-08
 author: 'Nicolas Riquelme'
 image: 
-    url: '/src/assets/images/netscan.png'
+    url: '/public/images/netscan.png'
     alt: ""
 tags: ["network", "ports", "puertos", "default", "tcp-ip", "scanning"]
 ---

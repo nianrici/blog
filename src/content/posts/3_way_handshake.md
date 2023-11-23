@@ -4,7 +4,7 @@ description: 'Breve introducción al 3whs'
 pubDate: 2023-01-02
 author: 'Nicolas Riquelme'
 image: 
-    url: '/src/assets/images/3-way-handshake-neon-ambiance-abstract-black-oil-gear-mecha-detailed-acrylic-grunge-intricate--456777264.png'
+    url: '/public/images/3-way-handshake-neon-ambiance-abstract-black-oil-gear-mecha-detailed-acrylic-grunge-intricate--456777264.png'
     alt: ""
 tags: ["security", "networking", "tcp-ip"]
 ---

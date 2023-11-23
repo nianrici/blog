@@ -4,7 +4,7 @@ description: ""
 pubDate: 2022-12-13
 author: 'Nicolas Riquelme'
 image: 
-    url: '/src/assets/images/port-clive.png'
+    url: '/public/images/port-clive.png'
     alt: ""
 tags: ["security", "ports", "puertos", "default"]
 ---

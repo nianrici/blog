@@ -4,7 +4,7 @@ description: '¿Y eso que es?'
 pubDate: 2023-01-23
 author: 'Nicolas Riquelme'
 image: 
-    url: '/src/assets/images/pixel-art-hacker-.png'
+    url: '/public/images/pixel-art-hacker-.png'
     alt: ""
 tags: ["security", "herramientas", "knowledge base", "networking"]
 ---

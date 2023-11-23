@@ -4,7 +4,7 @@ description: 'Simplificación de los distintos tipos de ciberataques'
 pubDate: 2023-04-16
 author: 'Nicolas Riquelme'
 image: 
-    url: '/src/assets/images/attacks.png'
+    url: '/public/images/attacks.png'
     alt: ""
 tags: ["hacking", "knowledge base", "DDOS", "smurf", "teardrop" ]
 ---

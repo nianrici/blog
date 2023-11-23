@@ -96,7 +96,7 @@ header {
 }
 
 section {
-  margin-bottom: 100px;
+  margin-bottom: 125px;
 }
 
 i {
@@ -130,13 +130,13 @@ body.dark-mode blockquote {
 
 footer {
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  columns: 3;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
   bottom: 0;
   width: 100%;
   padding: 20px;
-
 }
 
 * {
@@ -157,6 +157,14 @@ a {
 .container {
   position: relative;
 } 
+
+.socials {
+display: inline-grid;
+columns: 2;
+grid-template-columns: 1fr 1fr;
+grid-gap: 20px;
+padding: 10px;
+}
 
 .post-image {
 	width: 100%;

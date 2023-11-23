@@ -4,7 +4,7 @@ description: 'Tutorial espartano para escribir tests con Flask'
 pubDate: 2023-08-18
 author: 'Nicolas Riquelme'
 image: 
-    url: '/src/assets/images/python_1.png'
+    url: '/public/images/python_1.png'
     alt: ""
 tags: ["testing", "python", "Flask"]
 ---

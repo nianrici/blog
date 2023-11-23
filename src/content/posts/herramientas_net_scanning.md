@@ -4,7 +4,7 @@ description: '¿Y eso que es?'
 pubDate: 2023-01-22
 author: 'Nicolas Riquelme'
 image: 
-    url: '/src/assets/images/a-sketch-of-a-cyberpunk-hacker-.png'
+    url: '/public/images/a-sketch-of-a-cyberpunk-hacker-.png'
     alt: ""
 tags: ["security", "herramientas", "knowledge base", "networking", "nmap", "metasploit", "hping", "fing"]
 ---

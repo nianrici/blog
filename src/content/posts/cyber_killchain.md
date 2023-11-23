@@ -4,7 +4,7 @@ description: '¿Y eso que es?'
 pubDate: 2022-12-18
 author: 'Nicolas Riquelme'
 image: 
-    url: '/src/assets/images/watercolor-hacker-.png'
+    url: '/public/images/watercolor-hacker-.png'
     alt: ""
 tags: ["security", "conceptos", "knowledge base"]
 ---

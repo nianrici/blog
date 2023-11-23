@@ -4,7 +4,7 @@ description: ""
 pubDate: 2022-12-13
 author: 'Nicolas Riquelme'
 image: 
-    url: '/src/assets/images/john-the-ripper-in-the-style-of-petros-afshar.png'
+    url: '/public/images/john-the-ripper-in-the-style-of-petros-afshar.png'
     alt: ""
 tags: ["security", "cracking", "hashes"]
 ---
