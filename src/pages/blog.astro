@@ -2,7 +2,11 @@
 import { getCollection } from "astro:content";
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BlogPost from '../components/BlogPost.astro';
+
+// Fetch all blog posts from the content collection
 const allPosts = await getCollection("posts");
+
+// Define the page title
 const pageTitle = "Entradas del blog";
 ---
 <BaseLayout pageTitle={pageTitle}>

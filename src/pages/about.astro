@@ -1,24 +1,31 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Spotify from '../components/Spotify.astro';
 
 const pageTitle = "Sobre mi";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <section>
+    <section>
+	<h2>¿Que quién soy? pues...</h2>
   <blockquote>
     <p><strong><em>¿Empezamos como David Copperfield? Nací, crecí... ¿O comenzamos cuando nací a la oscuridad?</em></strong></p>
     <p><em>Louis de Pointe du Lac - Entrevista con el Vampiro</em></p>
     </blockquote>
     <p>Me llamo Nicolas "Niko" Riquelme y aquí podrás encontrar mi documentación (muy "sui generis", ya lo advierto) de las cosas que voy aprendiendo. Lo hago tanto para recordar como para ayudar a todo aquel que no tenga tanto tiempo libre (gracias al insomnio) como yo. No hace falta que comentes, me dejes PR's en github ni nada... voy a mi rollo y si algo está mal, ya me llamará la atención alguien en persona.</p>
+	<h2>¿Que qué es lo que hago? esto...</h2>
     <blockquote>
     <p><strong><em>Hola, soy el señor Lobo, soluciono problemas.</em></strong></p>
     <p><em>Señor Lobo - Pulp Fiction</em></p>
     </blockquote>
     <p>Empecé con los ordenadores hace ya ni se sabe (de hecho en mi perfil de LinkedIn tengo una foto de cuando era pequeño, con el Vic20 de mi padre). Me pagué parte del carnet de conducir instalando Sound Blasters, tarjetas de red (cuando hacerlo era un drama y los routers iban a 28K), disketeras y lectores de CD-ROM, allá por los '90. De ahí a ser "el colega que sabe de ordenadores", a "el que monta ordenadores", a "el que te configura el eMule para que vuele", a... bueno, se ve la progresión, verdad? Todo autodidacta hasta que tuve que sacarme una FP para poder trabajar de ello de manera "oficial".</p>
+	<h2>¿Que qué es lo que más me llena y me apasiona? la verdad es que...</h2>
     <blockquote>
     <p><strong><em>It's a burden being wonderful, like me...</em></strong></p>
     <p><a href="https://www.youtube.com/watch?v=F_sFafClcUk">The Burden of Being Wonderful</a>- Steel Panther</p>
     </blockquote>
     <p>Como habrás podido deducir, me gusta leer, ver películas, introducir a mi hija en el lado oscuro del frikismo, el Hard Rock y el Metal, cacharrear con los ordenadores y las tardes de los domingos con mi señora esposa. Disfruto con todas esas cosas y con alguna otra más (pero sobre todo con esas).</p>
+	<h2>Para muestra, un botón...</h2>
+<p>Esto es lo que escucho (por lo visto son el top de mis canciones más escuchadas + sugerencias de Spotify) 
+    <Spotify />
   </section>
 </BaseLayout>
