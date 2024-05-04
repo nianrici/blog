@@ -66,7 +66,19 @@
   font-family: 'Argon', monospace;
   color: #3c3836;
   line-height: 1.5;
+  scroll-behavior: smooth;
 }
+
+main {
+  position: relative;
+}
+
+section {
+  padding-bottom: 5rem;
+  margin-bottom: 125px;
+
+}
+
 
 .dark .nav-links a {
   color: #fff;
@@ -93,10 +105,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-section {
-  margin-bottom: 125px;
 }
 
 i {
@@ -185,7 +193,7 @@ h1 {
   font-size: 2.5rem;
 }
 
-.gallery-title {
+/* .gallery-title {
   position: sticky;
   top: 0;
   left: 0 ;
@@ -193,7 +201,7 @@ h1 {
   animation: enhance-header 3s linear both;
   animation-timeline: scroll(root block);
   animation-range: 0 200px;
-}
+} */
 
 .gallery {
   columns: 3;
@@ -309,6 +317,31 @@ a {
   border-radius: .5em;
   padding: .5em 1em;
   font-size: 1.15em;
+}
+
+.scroll-top {
+  position: absolute;
+  top: 120vh;
+  bottom: 2rem;
+  right: .5rem;
+}
+
+.scroll-top__link {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 85vh;
+  text-decoration:none;
+  border-radius: .25rem;
+  background-color: var(--dark-bg);
+  padding:1rem;
+  color: var(--dark-fg);
+  font-weight:700;
+  font-size: xx-large;
+  opacity:.3;
+}
+
+.scroll-top__link:hover {
+  opacity: initial;
 }
 
 /* animaciones */
