@@ -386,11 +386,21 @@ export async function parseOrgToHtml(content: string): Promise<string> {
   return html.join('\n');
 }
 
+function sanitizeUrl(url: string): string | null {
+  const trimmed = url.trim().toLowerCase();
+  if (trimmed.startsWith('javascript:') || trimmed.startsWith('data:') || trimmed.startsWith('vbscript:')) {
+    return null;
+  }
+  return url;
+}
+
 function escapeHtml(text: string): string {
   return text
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;');
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#x27;');
 }
 
 function parseInline(text: string): string {
@@ -403,18 +413,28 @@ function parseInline(text: string): string {
     return key;
   };
 
-  result = result.replace(/\[\[([^\]]+)\]\[([^\]]+)\]\]/g, (_, url, label) => {
-    return storeLink(`<a href="${url}" target="_blank" rel="noopener">${label}</a>`);
+  // Procesar enlaces Org Mode [[url][label]] - sanitizar URLs
+  result = result.replace(/\[\[([^\]]+)\]\]\[([^\]]+)\]\]/g, (_, url, label) => {
+    const safeUrl = sanitizeUrl(url);
+    if (!safeUrl) return escapeHtml(label);
+    return storeLink(`<a href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a>`);
   });
   result = result.replace(/\[\[([^\]]+)\]\]/g, (_, url) => {
-    return storeLink(`<a href="${url}" target="_blank" rel="noopener">${url}</a>`);
+    const safeUrl = sanitizeUrl(url);
+    if (!safeUrl) return escapeHtml(url);
+    return storeLink(`<a href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(url)}</a>`);
   });
-  result = result.replace(/(https?:\/\/[^\s\)\]]+)/g, (_, url) => {
-    return storeLink(`<a href="${url}" target="_blank" rel="noopener">${url}</a>`);
+  // URLs sueltas en texto
+  result = result.replace(/(https?:\/\/[^)\s\]]+)/g, (_, url) => {
+    const safeUrl = sanitizeUrl(url);
+    if (!safeUrl) return escapeHtml(url);
+    return storeLink(`<a href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(url)}</a>`);
   });
 
-  result = result.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  // Escapar HTML restante
+  result = result.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;');
 
+  // Formato inline (después de escapar, aplicar sobre el texto ya seguro)
   result = result.replace(/\*\*\*(.+?)\*\*\*/g, '<strong><em>$1</em></strong>');
   result = result.replace(/\*\*(.+?)\*\*/g, '<em>$1</em>');
   result = result.replace(/\*(.+?)\*/g, '<strong>$1</strong>');
@@ -422,6 +442,7 @@ function parseInline(text: string): string {
   result = result.replace(/=([^=]+)=/g, '<code>$1</code>');
   result = result.replace(/~([^~]+)~/g, '<code>$1</code>');
 
+  // Restaurar links almacenados
   links.forEach((html, key) => {
     result = result.split(key).join(html);
   });
