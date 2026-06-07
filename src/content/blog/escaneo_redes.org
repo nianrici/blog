@@ -1,0 +1,127 @@
+#+title: Escaneo de redes
+#+date: 2026-03-15
+#+description: Herramientas y técnicas para el escaneo de redes
+#+tags: networking, nmap, herramientas
+#+category: Ciberseguridad
+
+El escaneo de redes es una técnica fundamental en ciberseguridad para evaluar la seguridad de una red y determinar qué dispositivos y servicios están conectados a ella. El objetivo es identificar posibles vulnerabilidades o debilidades que puedan ser explotadas por un atacante. Para llevar a cabo un escaneo de redes se utilizan herramientas especializadas que envían paquetes de datos a los dispositivos y observan las respuestas. Las respuestas obtenidas pueden indicar si el dispositivo está conectado, qué servicios están disponibles y si hay vulnerabilidades conocidas.
+
+* Herramientas para network scanning
+
+** Metasploit
+Metasploit es una herramienta muy útil para los profesionales de seguridad informática, ya que les permite realizar pruebas de penetración de manera eficiente y evaluar la seguridad de los sistemas y las redes de manera detallada. También incluye una amplia variedad de módulos y herramientas que se pueden utilizar para realizar diferentes tipos de pruebas y explorar diferentes vulnerabilidades.
+
+*** Escaneo de red
+Metasploit dispone de módulos que permiten escanear un sistema para detectar vulnerabilidades. Para listarlos, basta con hacer =search portscan= en su consola.
+
+** nmap
+Nmap es un programa de escaneo de red que se utiliza para descubrir dispositivos y servicios en una red. Permite a los administradores de redes y seguridad obtener información sobre los sistemas conectados, incluyendo los sistemas operativos, puertos abiertos, servicios en ejecución y configuraciones de seguridad. También puede utilizarse para detectar dispositivos vulnerables y realizar pruebas de penetración. Nmap es una herramienta popular y es ampliamente utilizada en la comunidad de seguridad informática.
+
+Escaneo de una dirección IP o nombre de host específico:
+
+#+begin_example
+nmap 192.168.1.1
+#+end_example
+
+Escaneo de una subred:
+
+#+begin_example
+nmap 192.168.1.0/24
+#+end_example
+
+Escaneo de varias direcciones IP o nombres de host:
+
+#+begin_example
+nmap 192.168.1.1 192.168.1.2 192.168.1.3
+#+end_example
+
+Escaneo de un rango de puertos específico:
+
+#+begin_example
+nmap -p 1-1000 192.168.1.1
+#+end_example
+
+Escaneo de una lista de puertos específicos:
+
+#+begin_example
+nmap -p 22,80,443 192.168.1.1
+#+end_example
+
+Escaneo de un rango de direcciones IP:
+
+#+begin_example
+nmap 192.168.1.1-50
+#+end_example
+
+Escaneo de una lista de direcciones IP o nombres de host desde un archivo de texto:
+
+#+begin_example
+nmap -iL targets.txt
+#+end_example
+
+Escaneo de puertos con detección de servicios y versiones:
+
+#+begin_example
+nmap -sV 192.168.1.1
+#+end_example
+
+Escaneo de una red utilizando el traceroute:
+
+#+begin_example
+nmap --traceroute 192.168.1.0/24
+#+end_example
+
+Escaneo de una red utilizando la detección de sistema operativo:
+
+#+begin_example
+nmap -O 192.168.1.0/24
+#+end_example
+
+** fing
+Fing es una aplicación de monitoreo de red para dispositivos Android que se utiliza para escanear y analizar la red inalámbrica a la que está conectado un dispositivo. Con Fing, los usuarios pueden ver qué dispositivos están conectados a la red y obtener información sobre ellos, como sus direcciones IP y sus nombres de host. También permite escanear el rango de direcciones IP de una red para buscar dispositivos ocultos o descubrir dispositivos que se han conectado sin autorización. Fing permite monitorear y analizar la red inalámbrica de manera eficiente. También es útil para identificar problemas de rendimiento.
+
+** hping 2/3
+Hping es una herramienta de línea de comandos para crear paquetes de red y enviarlos a través de una red. Se utiliza a menudo para probar la seguridad de una red o para realizar pruebas de rendimiento. Permite especificar aspectos de los paquetes tales como el protocolo de red (TCP, UDP, ...), la dirección IP de destino, el puerto de destino y el tamaño del paquete. También permite recibir y mostrar las respuestas a los paquetes enviados. Puede utilizarse para llevar a cabo ataques de denegación de servicio (usando flag --flood) o para intentar eludir la seguridad de una red (usando las flags -S --spoof, o --xmas/ymas).
+
+#+begin_example
+hping -i {IP}                                               # ICMP Ping
+hping -A {IP} -p {port}                                     # Escaneo de respuesta ACK a un puerto
+hping -2 {IP} -p {port}                                     # Escaneo por protocolo UDP a un puerto
+hping {IP} -Q -p {port} -s                                  # Captura del número de secuencia de los paquetes
+hping -1 {IP acabada en x} --rand-dest -I {interfaz de red} # Escaneo de subred buscando dispositivos activos
+hping -9 HTTP -I {interfaz de red}                          # Intercepta todo el trafico HTTP de la red
+hping -S {IP spoofeada} -a {IP víctima} -p22 --flood        # Ataque de inundación
+#+end_example
+
+* Descubrimiento de hosts
+El descubrimiento de hosts es el proceso de identificar qué dispositivos están activos y respondiendo en una red. Se utilizan diversas técnicas como escaneo ARP, UDP ping e ICMP echo.
+
+** Escaneo de ICMP
+El escaneo de ping ICMP es una técnica de escaneo de red que se utiliza para determinar qué host están conectados a una red y cuáles son sus direcciones IP. Se realiza enviando paquetes de eco ICMP a los hosts de la red para determinar si están conectados y disponibles.
+
+#+begin_example
+nmap -PE 192.168.1.0/24
+#+end_example
+
+#+begin_example
+nmap -PE -sn 10.1.1.0/24
+#+end_example
+
+** Escaneo ARP y UDP
+El escaneo de ping ARP y el escaneo de ping UDP son dos técnicas de escaneo de red que se utilizan para determinar qué host están conectados a una red y cuáles son sus direcciones IP.
+
+El escaneo de ping ARP utiliza paquetes ARP para solicitar la dirección MAC de los hosts de la red. Si un host recibe el paquete y está disponible, responderá con su dirección MAC y su dirección IP. Esta técnica es útil para escanear redes locales y solo funciona en redes LAN.
+
+El escaneo de ping UDP utiliza paquetes UDP para enviar solicitudes de echo a los hosts de la red. Si un host recibe el paquete y está disponible, responderá con un paquete de respuesta de echo. Esta técnica es útil para escanear redes más grandes y se puede utilizar tanto en redes LAN como WAN.
+
+Escaneo ARP:
+
+#+begin_example
+nmap -PR 192.168.1.0/24
+#+end_example
+
+#+begin_example
+nmap -sU 192.168.1.0/24
+#+end_example
+
+Es importante tener en cuenta que algunos hosts pueden estar configurados para no responder a paquetes de ping, por lo que es posible que no se detecten todos los hosts disponibles con estas técnicas.

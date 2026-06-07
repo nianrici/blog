@@ -1,0 +1,193 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getQuickies, getQuickie, parseOrgToHtml } from '../../lib/blog';
+
+export function getStaticPaths() {
+  const quickies = getQuickies();
+  return quickies.map(quickie => ({
+    params: { slug: quickie.slug },
+    props: { slug: quickie.slug }
+  }));
+}
+
+const { slug } = Astro.props;
+const quickie = getQuickie(slug);
+
+if (!quickie) {
+  return Astro.redirect('/quickies');
+}
+
+const formatDate = (date: Date) => {
+  return date.toLocaleDateString('es-ES', { year: 'numeric', month: 'short', day: 'numeric' });
+};
+
+const htmlContent = await parseOrgToHtml(quickie.body);
+---
+
+<Layout title={quickie.data.title} description={quickie.data.description || `Quickie: ${quickie.data.title}`}>
+  <article>
+    <div class="mb-6 flex items-center gap-2 flex-wrap">
+      <span class="text-catppuccin-green">niko</span><span class="text-catppuccin-overlay">@</span><span class="text-catppuccin-blue">blog</span><span class="text-catppuccin-overlay">:</span><span class="text-catppuccin-mauve">~/quickies</span><span class="text-catppuccin-text">$</span>
+      <span class="text-catppuccin-overlay">cat</span>
+      <span class="text-catppuccin-yellow">{quickie.slug}.org</span>
+    </div>
+
+    <div class="bg-catppuccin-surface0/20 rounded border border-catppuccin-surface0 p-4 mb-6">
+      <div class="text-catppuccin-overlay text-xs mb-3">
+        <span class="text-catppuccin-yellow">#</span> {quickie.data.title}
+      </div>
+      <div class="flex items-center gap-3 flex-wrap mb-4">
+        {quickie.data.date && (
+          <time class="text-catppuccin-overlay text-sm">
+            {formatDate(quickie.data.date)}
+          </time>
+        )}
+      </div>
+      <div class="border-t border-catppuccin-surface1 pt-3">
+        <span class="text-catppuccin-yellow">▶</span>
+      </div>
+    </div>
+
+    <div class="prose-content" set:html={htmlContent} />
+    
+    <div class="mt-8 pt-4 border-t border-catppuccin-surface0">
+      <a 
+        href="/quickies" 
+        class="inline-flex items-center gap-2 text-catppuccin-yellow hover:text-catppuccin-peach transition-colors focus:outline-none focus:ring-2 focus:ring-catppuccin-yellow rounded"
+      >
+        <span class="text-catppuccin-green">←</span>
+        <span class="text-catppuccin-text">cd ..</span>
+      </a>
+    </div>
+  </article>
+</Layout>
+
+<style is:global>
+  .prose-content {
+    color: #cdd6f4;
+  }
+  
+  .prose-content h1 {
+    color: #cdd6f4;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #313244;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .prose-content h2 {
+    color: #f9e2af;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .prose-content h3 {
+    color: #cba6f7;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 1.25em;
+    margin-bottom: 0.5em;
+  }
+  
+  .prose-content h4 {
+    color: #a6e3a1;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+  
+  .prose-content p {
+    margin-bottom: 1em;
+    line-height: 1.75;
+  }
+  
+  .prose-content > div.section > p:first-of-type::before {
+    content: "▶ ";
+    color: #f9e2af;
+  }
+  
+  .prose-content a {
+    color: #89b4fa;
+    text-decoration: underline;
+  }
+  
+  .prose-content a[href^="http"]:hover::after {
+    content: " ↗";
+    font-size: 0.75em;
+  }
+  
+  .prose-content a:hover {
+    color: #b4befe;
+  }
+  
+  .prose-content ul, .prose-content ol {
+    margin: 1em 0;
+    padding-left: 1.5em;
+  }
+  
+  .prose-content li {
+    margin: 0.5em 0;
+  }
+  
+  .prose-content li::marker {
+    color: #f9e2af;
+  }
+  
+  .prose-content ol li::marker {
+    color: #89b4fa;
+  }
+  
+  .prose-content code {
+    background: #313244;
+    padding: 0.2em 0.4em;
+    border-radius: 0.25rem;
+    font-size: 0.875em;
+    color: #f9e2af;
+  }
+  
+  .prose-content pre code {
+    background: none;
+    padding: 0;
+  }
+
+  .prose-content .code-block {
+    margin: 1em 0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border: 1px solid #313244;
+  }
+
+  .prose-content .code-block pre {
+    margin: 0;
+    padding: 1em;
+    background: #1e1e2e !important;
+    border: none;
+    border-radius: 0;
+  }
+
+  .prose-content .code-block code {
+    background: none;
+    padding: 0;
+  }
+  
+  .prose-content blockquote {
+    border-left: 3px solid #f9e2af;
+    padding-left: 1em;
+    margin: 1em 0;
+    color: #9399b2;
+    font-style: italic;
+  }
+  
+  .prose-content strong {
+    color: #f5e0dc;
+  }
+  
+  .prose-content em {
+    color: #f2cdcd;
+  }
+</style>

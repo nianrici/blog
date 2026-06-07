@@ -1,0 +1,83 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getQuickies } from '../../lib/blog';
+
+const quickies = getQuickies();
+
+const formatDate = (date: Date) => {
+  return date.toLocaleDateString('es-ES', { year: 'numeric', month: 'short', day: 'numeric' });
+};
+---
+
+<Layout title="Quickies" description="Notas breves sobre tecnología, ciberseguridad y desarrollo web">
+  <div class="mb-6">
+    <span class="text-catppuccin-overlay">#</span> <span class="text-catppuccin-yellow">Quickies</span>
+    <span class="text-catppuccin-overlay ml-2"># notas breves</span>
+  </div>
+
+  {quickies.length === 0 ? (
+    <div class="text-catppuccin-overlay">
+      <span class="text-catppuccin-yellow">ls:</span> No hay quickies todavía.
+    </div>
+  ) : (
+    <div class="space-y-2">
+      {quickies.map((quickie, index) => (
+        <article 
+          class="group border border-catppuccin-surface0 rounded p-4 hover:bg-catppuccin-surface0/30 hover:border-catppuccin-surface1 transition-all"
+          style={`animation: fadeIn 0.3s ease-out ${index * 0.05}s both`}
+        >
+          <a href={`/quickies/${quickie.slug}`} class="block focus:outline-none focus:ring-2 focus:ring-catppuccin-blue rounded">
+            <div class="flex items-start gap-4 flex-wrap">
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 mb-1 flex-wrap">
+                  <span class="text-catppuccin-overlay">-rw-r--r--</span>
+                  {quickie.data.date && (
+                    <time class="text-catppuccin-overlay text-sm">
+                      {formatDate(quickie.data.date)}
+                    </time>
+                  )}
+                </div>
+                <h2 class="text-catppuccin-text group-hover:text-catppuccin-yellow transition-colors truncate">
+                  <span class="text-catppuccin-yellow">▶</span> {quickie.data.title}
+                </h2>
+                {quickie.data.description && (
+                  <p class="text-catppuccin-overlay text-sm mt-1 line-clamp-2">
+                    {quickie.data.description}
+                  </p>
+                )}
+              </div>
+              <div class="text-catppuccin-yellow group-hover:translate-x-1 transition-transform">
+                →
+              </div>
+            </div>
+          </a>
+        </article>
+      ))}
+    </div>
+  )}
+
+  <div class="mt-8 text-catppuccin-overlay text-sm">
+    <span class="text-catppuccin-green">niko</span><span class="text-catppuccin-overlay">@</span><span class="text-catppuccin-blue">blog</span><span class="text-catppuccin-overlay">:</span><span class="text-catppuccin-mauve">~/quickies</span><span class="text-catppuccin-text">$</span>
+    <span class="ml-2">found <span class="text-catppuccin-yellow">{quickies.length}</span> quickies</span>
+  </div>
+
+  <style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateX(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    .line-clamp-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  </style>
+</Layout>

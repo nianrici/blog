@@ -1,0 +1,6 @@
+#+title: Cyber_killchain
+#+date: 2026-03-15
+#+description: Artículo sobre Cyber_killchain
+La cyber-killchain es un modelo que describe el proceso de un ataque
+cibernético desde la fase de reconocimiento hasta la de comando y
+control.

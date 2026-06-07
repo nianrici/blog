@@ -1,0 +1,5028 @@
+#+title: Listado_puertos
+#+date: 2026-03-15
+#+description: Artículo sobre Listado_puertos
+He aquí un listado de lo que suele haber por defecto detrás de cada
+puerto de red.
+
+#+begin_html
+  <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+#+end_html
+
+#+begin_html
+  <colgroup>
+#+end_html
+
+#+begin_html
+  <col  class="org-right" />
+#+end_html
+
+#+begin_html
+  <col  class="org-left" />
+#+end_html
+
+#+begin_html
+  </colgroup>
+#+end_html
+
+#+begin_html
+  <tbody>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+Puerto(s)
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Servicio
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+---
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+---
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+7
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Echo
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+19
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Chargen
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+20-21
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+FTP
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+22
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+SSH/SCP
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+23
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Telnet
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+25
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+SMTP
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+42
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+WINSReplication
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+43
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+WHOIS
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+49
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+TACACS
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+53
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+DNS
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+67-68
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+DHCP/BOOTP
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+69
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+TFTP
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+70
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Gopher
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+79
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Finger
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+80
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+HTTP
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+88
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Kerberos
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+102
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+MSExchange
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+110
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+POP3
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+113
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Ident
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+119
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+NNTP(Usenet)
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+123
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+NTP
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+135
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+MicrosoftRPC
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+137-139
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+NetBIOS
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+143
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+IMAP4
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+161-162
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+SNMP
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+177
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+XDMCP
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+179
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+BGP
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+201
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+AppleTalk
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+264
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+BGMP
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+318
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+TSP
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+381-383
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+HPOpenview
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+389
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+LDAP
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+411-412
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+DirectConnect
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+443
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+HTTPoverSSL
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+445
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+MicrosoftDS
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+464
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Kerberos
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+465
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+SMTPoverSSL
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+497
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Retrospect
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+500
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+ISAKMP
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+512
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+rexec
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+513
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+rlogin
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+514
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+syslog
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+515
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+LPD/LPR
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+520
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+RIP
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+521
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+RIPng(IPv6)
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+540
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+UUCP
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+554
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+RTSP
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+546-547
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+DHCPv6
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+560
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+rmonitor
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+563
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+NNTPoverSSL
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+587
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+SMTP
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+591
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+FileMaker
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+593
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+MicrosoftDCOM
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+631
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+InternetPrinting
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+636
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+LDAPoverSSL
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+639
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+MSDP(PIM)
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+646
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+LDP(MPLS)
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+691
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+MSExchange
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+860
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+iSCSI
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+873
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+rsync
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+902
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+VMware Server
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+989-990
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+FTPoverSSL
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+993
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+IMAP4overSSL
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+995
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+POP3overSSL
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+1025
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+MicrosoftRPC
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+1026-1029
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+WindowsMessenger
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+1080
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+SOCKSProxy
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+1080
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+MyDoom
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+1194
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+OpenVPN
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+1214
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Kazaa
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+1241
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Nessus
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+1311
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+DellOpenManage
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+1337
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+WASTE
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+1433-1434
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+MicrosoftSQL
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+1512
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+WINS
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+1589
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+CiscoVQP
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+1701
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+L2TP
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+1723
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+MSPPTP
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+1725
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Steam
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+1741
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+CiscoWorks2000
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+1755
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+MSMediaServer
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+1812-1813
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+RADIUS
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+1863
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+MSN
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+1985
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+CiscoHSRP
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+2000
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+CiscoSCCP
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+2002
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+CiscoACS
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+2049
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+NFS
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+2082-2083
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+cPanel
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+2100
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+OracleXDB
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+2222
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+DirectAdmin
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+2302
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Halo
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+2483-2484
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+OracleDB
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+2745
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Bagle.H
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+2967
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+SymantecAV
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+3050
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+InterbaseDB
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+3074
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+XBOXLive
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+3124
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+HTTPProxy
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+3127
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+MyDoom
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+3128
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+HTTPProxy
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+3222
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+GLBP
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+3260
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+iSCSITarget
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+3306
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+MySQL
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+3389
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+TerminalServer
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+3689
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+iTunes
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+3690
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Subversion
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+3724
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+WorldofWarcraft
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+3784-3785
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Ventrilo
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+4333
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+mSQL
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+4444
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Blaster
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+4664
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+GoogleDesktop
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+4672
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+eMule
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+4899
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Radmin
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+5000
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+UPnP
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+5001
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Slingbox
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+5001
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+iperf
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+5004-5005
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+RTP
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+5050
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Yahoo!Messenger
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+5060
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+SIP
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+5190
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+AIM/ICQ
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+5222-5223
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+XMPP/Jabber
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+5432
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+PostgreSQL
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+5500
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+VNCServer
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+5554
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Sasser
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+5631-5632
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+pcAnywhere
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+5800
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+VNCoverHTTP
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+5900
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+- VNCServer
+
+  #+begin_html
+    </td>
+  #+end_html
+
+  #+begin_html
+    </tr>
+  #+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+6000-6001
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+X11
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+6112
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Battle.net
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+6129
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+DameWare
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+6257
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+WinMX
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+6346-6347
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Gnutella
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+6500
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+GameSpyArcade
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+6566
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+SANE
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+6588
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+AnalogX
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+6665-6669
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+IRC
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+6679
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+/6697 IRCoverSSL
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+6699
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Napster
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+6881-6999
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+BitTorrent
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+6891-6901
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+WindowsLive
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+6970
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Quicktime
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+7212
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+GhostSurf
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+7648-7649
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+CU-SeeMe
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+8000
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+InternetRadio
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+8080
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+HTTPProxy
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+8086-8087
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+KasperskyAV
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+8118
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Privoxy
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+8200
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+VMwareServer
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+8500
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+AdobeColdFusion
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+8767
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+TeamSpeak
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+8866
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Bagle.B
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+9100
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+HPJetDirect
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+9101-9103
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Bacula
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+9119
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+MXit
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+9800
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+WebDAV
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+9898
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Dabber
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+9988
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Rbot/Spybot
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+9999
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Urchin
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+10000
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Webmin
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+10000
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+BackupExec
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+10113-10116
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+NetIQ
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+11371
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+OpenPGP
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+12035-12036
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+SecondLife
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+12345
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+NetBus
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+13720-13721
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+NetBackup
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+14567
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Battlefield
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+15118
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Dipnet/Oddbob
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+19226
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+AdminSecure
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+19638
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Ensim
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+20000
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Usermin
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+24800
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Synergy
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+25999
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Xfire
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+27015
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Half-Life
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+27374
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+Sub7
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+28960
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+CallofDuty
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+31337
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+BackOrifice
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  <tr>
+#+end_html
+
+#+begin_html
+  <td class="org-right">
+#+end_html
+
+33434+
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  <td class="org-left">
+#+end_html
+
+traceroute
+
+#+begin_html
+  </td>
+#+end_html
+
+#+begin_html
+  </tr>
+#+end_html
+
+#+begin_html
+  </tbody>
+#+end_html
+
+#+begin_html
+  </table>
+#+end_html
+
+* Referencias:
+:PROPERTIES:
+:CUSTOM_ID: referencias
+:END:
+- [[https://packetlife.net/media/library/23/common-ports.pdf][packetlife.net]]
+- 

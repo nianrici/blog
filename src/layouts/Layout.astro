@@ -1,0 +1,82 @@
+---
+import { ClientRouter } from 'astro:transitions';
+import '../styles/global.css';
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es-ES">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description || "Un blog sobre tecnología, ciberseguridad y desarrollo web"} />
+    <title>{title} | Mi Blog</title>
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/rss.xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <ClientRouter />
+  </head>
+  <body class="bg-catppuccin-crust min-h-screen flex items-center justify-center p-4 md:p-8" style="font-family: 'JetBrains Mono', monospace;">
+    <a
+      href="#contenido-principal"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-catppuccin-blue focus:text-catppuccin-crust focus:rounded"
+    >
+      Saltar al contenido principal
+    </a>
+
+    <div class="w-full max-w-6xl terminal-window rounded-lg overflow-hidden shadow-2xl shadow-black/50">
+      <div class="terminal-titlebar bg-catppuccin-surface0 px-4 py-2 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <button class="w-3 h-3 rounded-full bg-catppuccin-red hover:opacity-80 transition-opacity" aria-label="Cerrar"></button>
+          <button class="w-3 h-3 rounded-full bg-catppuccin-yellow hover:opacity-80 transition-opacity" aria-label="Minimizar"></button>
+          <button class="w-3 h-3 rounded-full bg-catppuccin-green hover:opacity-80 transition-opacity" aria-label="Maximizar"></button>
+        </div>
+        <span class="text-catppuccin-subtext text-xs hidden sm:block">{title} | Mi Blog</span>
+        <div class="w-16"></div>
+      </div>
+      
+      <div class="bg-catppuccin-base border-x-4 border-catppuccin-surface0">
+        <header class="bg-catppuccin-surface0/30 border-b border-catppuccin-surface1">
+          <div class="max-w-6xl mx-auto px-4 py-3">
+            <span class="text-catppuccin-green">niko</span><span class="text-catppuccin-overlay">@</span><span class="text-catppuccin-blue">blog</span><span class="text-catppuccin-overlay">:</span><span class="text-catppuccin-mauve">~</span><span class="text-catppuccin-text">$</span>
+            <span class="ml-4 text-catppuccin-text">
+              <a href="/" class="hover:text-catppuccin-blue transition-colors focus:outline-none focus:ring-2 focus:ring-catppuccin-blue rounded px-2 py-1">inicio</a>
+              <span class="text-catppuccin-overlay"> | </span>
+              <a href="/blog" class="hover:text-catppuccin-blue transition-colors focus:outline-none focus:ring-2 focus:ring-catppuccin-blue rounded px-2 py-1">blog</a>
+              <span class="text-catppuccin-overlay"> | </span>
+              <a href="/quickies" class="hover:text-catppuccin-yellow transition-colors focus:outline-none focus:ring-2 focus:ring-catppuccin-yellow rounded px-2 py-1">quickies</a>
+              <span class="text-catppuccin-overlay"> | </span>
+              <a href="/sobre-mi" class="hover:text-catppuccin-blue transition-colors focus:outline-none focus:ring-2 focus:ring-catppuccin-blue rounded px-2 py-1">sobre-mi</a>
+            </span>
+          </div>
+        </header>
+
+        <main id="contenido-principal" class="max-w-6xl mx-auto px-4 py-8 flex-grow" role="main">
+          <div transition:animate="slide">
+            <slot />
+          </div>
+        </main>
+
+        <footer class="bg-catppuccin-surface0/20 border-t border-catppuccin-surface1 mt-auto" role="contentinfo">
+          <div class="max-w-6xl mx-auto px-4 py-3">
+            <span class="text-catppuccin-green">niko</span><span class="text-catppuccin-overlay">@</span><span class="text-catppuccin-blue">blog</span><span class="text-catppuccin-overlay">:</span><span class="text-catppuccin-mauve">~</span><span class="text-catppuccin-text">$</span>
+            <span class="text-catppuccin-overlay ml-2">echo "visita mi blog"</span>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <style is:global>
+      .terminal-window {
+        border-radius: 12px;
+      }
+      
+      .terminal-titlebar {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+    </style>
+  </body>
+</html>

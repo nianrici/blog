@@ -1,0 +1,30 @@
+{
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/rss": "^4.0.17",
+    "@astrojs/tailwind": "^6.0.2",
+    "@orgajs/astro": "^1.4.0",
+    "astro": "^5.18.0",
+    "orga": "^4.7.1",
+    "rehype-stringify": "^10.0.1",
+    "remark": "^15.0.1",
+    "remark-frontmatter": "^5.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.2",
+    "shiki": "^4.0.2",
+    "unified": "^11.0.5",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.27",
+    "openclaw": "^2026.3.13",
+    "postcss": "^8.5.8",
+    "tailwindcss": "3"
+  }
+}

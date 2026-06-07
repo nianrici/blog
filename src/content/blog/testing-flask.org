@@ -1,0 +1,112 @@
+#+title: Testing Flask
+#+date: 2026-03-15
+#+description: Artículo sobre Testing Flask
+** Importar módulos
+:PROPERTIES:
+:CUSTOM_ID: importar-módulos
+:END:
+Importamos unittest y Flask:
+
+#+begin_src python
+        import unittest
+        from flask import Flask
+#+end_src
+
+** Crear clase de tests
+:PROPERTIES:
+:CUSTOM_ID: crear-clase-de-tests
+:END:
+Creamos una clase que herede de unittest.TestCase:
+
+#+begin_src python
+        class FlaskTests(unittest.TestCase):
+
+          # tests aquí
+#+end_src
+
+** Inicializar la app
+:PROPERTIES:
+:CUSTOM_ID: inicializar-la-app
+:END:
+Inicializamos la app de Flask en el método setUp():
+
+#+begin_src python
+        def setUp(self):
+          self.app = Flask(__name__)
+#+end_src
+
+** Escribir tests para vistas
+:PROPERTIES:
+:CUSTOM_ID: escribir-tests-para-vistas
+:END:
+Escribimos tests para las vistas con el cliente de tests:
+
+#+begin_src python
+        def test_index(self):
+          with self.app.test_client() as client:  
+            res = client.get('/')
+            self.assertEqual(res.status_code, 200)
+#+end_src
+
+** Mockear partes complejas
+:PROPERTIES:
+:CUSTOM_ID: mockear-partes-complejas
+:END:
+Mockeamos con [cite/t:@mock.patch] para reemplazar partes complejas:
+
+#+begin_src python
+        @mock.patch('requests.get')
+        def test_api(self, mock_get):
+          # Testea API mockeada
+#+end_src
+
+** Configurar base de datos de tests
+:PROPERTIES:
+:CUSTOM_ID: configurar-base-de-datos-de-tests
+:END:
+Usamos SQLite en memoria para los tests:
+
+#+begin_src python
+        app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite://'
+#+end_src
+
+** Ejecutar tests
+:PROPERTIES:
+:CUSTOM_ID: ejecutar-tests
+:END:
+Ejecutamos los tests con unittest:
+
+#+begin_src python
+        python -m unittest
+#+end_src
+
+** Revisar cobertura
+:PROPERTIES:
+:CUSTOM_ID: revisar-cobertura
+:END:
+Vemos la cobertura de código con coverage:
+
+#+begin_src python
+        coverage run -m unittest
+        coverage report
+#+end_src
+
+** Configurar CI
+:PROPERTIES:
+:CUSTOM_ID: configurar-ci
+:END:
+Configuramos CI para ejecutar tests automáticamente.
+
+1. Elige un servicio de CI como GitHub Actions, Travis CI o CircleCI.
+2. Crea un archivo de configuración para ese servicio en tu repo. Por ejemplo, =.github/workflows/ci.yml= para GitHub Actions.
+3. Define el trigger para ejecutar la CI. Normalmente quieres que se ejecute en cada push a tu repo.
+4. Especifica los pasos de la CI:
+   4.1. Haz checkout del código del repo.
+   4.2. Configura el entorno virtual con pyenv, virtualenv, etc.
+   4.3. Instala dependencias con pip install.
+   4.4. Ejecuta los tests con un comando como =python -m unittest=.
+   4.5. Opcionalmente, revisa la cobertura de código.
+5. El servicio de CI ejecutará estos pasos automáticamente cada vez que hagas push.
+6. Revisa los resultados de la ejecución de la CI en la interfaz del servicio. Te avisará si algún test falla.
+7. Arregla los tests fallidos antes de hacer merge a la rama principal. Esto asegura que solo código testeado llegue a producción.
+8. Opcionalmente, configura la CI para desplegar tu app automáticamente si los tests pasan.

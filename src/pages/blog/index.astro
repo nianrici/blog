@@ -1,0 +1,261 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getBlogPosts } from '../../lib/blog';
+
+const posts = getBlogPosts();
+const allTags = [...new Set(posts.flatMap(p => p.data.tags || []))];
+const allCategories = [...new Set(posts.flatMap(p => p.data.category ? [p.data.category] : []))];
+
+const formatDate = (date: Date) => {
+  return date.toLocaleDateString('es-ES', { year: 'numeric', month: 'short', day: 'numeric' });
+};
+
+const searchQuery = Astro.url.searchParams.get('q') || '';
+const selectedTag = Astro.url.searchParams.get('tag') || '';
+const selectedCategory = Astro.url.searchParams.get('category') || '';
+
+let filteredPosts = posts;
+if (searchQuery) {
+  const q = searchQuery.toLowerCase();
+  filteredPosts = posts.filter(p => 
+    p.data.title.toLowerCase().includes(q) ||
+    p.data.description?.toLowerCase().includes(q) ||
+    p.data.tags?.some(t => t.toLowerCase().includes(q))
+  );
+}
+if (selectedTag) {
+  filteredPosts = filteredPosts.filter(p => p.data.tags?.includes(selectedTag));
+}
+if (selectedCategory) {
+  filteredPosts = filteredPosts.filter(p => p.data.category === selectedCategory);
+}
+---
+<Layout title="Blog" description="Artículos sobre tecnología, ciberseguridad y desarrollo web">
+  <div class="mb-6">
+    <span class="text-catppuccin-overlay">#</span> <span class="text-catppuccin-green">Artículos del blog</span>
+  </div>
+
+  <div class="mb-8 space-y-4">
+    <div class="flex items-center gap-2 flex-wrap">
+      <span class="text-catppuccin-green">niko</span><span class="text-catppuccin-overlay">@</span><span class="text-catppuccin-blue">blog</span><span class="text-catppuccin-overlay">:</span><span class="text-catppuccin-mauve">~/blog</span><span class="text-catppuccin-text">$</span>
+      <span class="text-catppuccin-overlay">grep -r "</span><span class="text-catppuccin-text">{searchQuery || (selectedTag ? `#${selectedTag}` : selectedCategory || 'buscar')}</span><span class="text-catppuccin-overlay">"</span>
+    </div>
+
+    <form action="/blog" method="get" data-astro-reload class="flex gap-2 items-center">
+      <span class="text-catppuccin-green">niko</span><span class="text-catppuccin-overlay">@</span><span class="text-catppuccin-blue">blog</span><span class="text-catppuccin-overlay">:</span><span class="text-catppuccin-mauve">~/blog</span><span class="text-catppuccin-text">$</span>
+      <input 
+        type="search" 
+        name="q" 
+        value={searchQuery}
+        placeholder="buscar..."
+        class="flex-1 bg-transparent border-b border-catppuccin-surface1 text-catppuccin-text placeholder-catppuccin-overlay focus:outline-none focus:border-catppuccin-blue px-1"
+      />
+      <button 
+        type="submit"
+        class="text-catppuccin-blue hover:text-catppuccin-sapphire transition-colors"
+      >
+        [enter]
+      </button>
+    </form>
+
+    {(allTags.length > 0 || allCategories.length > 0) && (
+      <div class="flex flex-wrap gap-3 items-center">
+        <span class="text-catppuccin-overlay">etiquetas:</span>
+        {allCategories.map(cat => (
+          <a 
+            href={`/blog?category=${encodeURIComponent(cat)}${searchQuery ? `&q=${encodeURIComponent(searchQuery)}` : ''}`}
+            class:list={[
+              "transition-colors",
+              selectedCategory === cat 
+                ? "text-catppuccin-mauve font-bold" 
+                : "text-catppuccin-subtext hover:text-catppuccin-mauve"
+            ]}
+          >
+            [{cat}]
+          </a>
+        ))}
+        {allTags.map(tag => (
+          <a 
+            href={`/blog?tag=${encodeURIComponent(tag)}${searchQuery ? `&q=${encodeURIComponent(searchQuery)}` : ''}${selectedCategory ? `&category=${encodeURIComponent(selectedCategory)}` : ''}`}
+            class:list={[
+              "transition-colors",
+              selectedTag === tag 
+                ? "text-catppuccin-blue font-bold" 
+                : "text-catppuccin-subtext hover:text-catppuccin-blue"
+            ]}
+          >
+            #<span class="text-catppuccin-text">{tag}</span>
+          </a>
+        ))}
+        {(selectedTag || selectedCategory || searchQuery) && (
+          <a 
+            href="/blog"
+            class="text-catppuccin-red hover:text-catppuccin-peach transition-colors ml-2"
+          >
+            [clear]
+          </a>
+        )}
+      </div>
+    )}
+  </div>
+
+  <div id="search-results-container">
+    {filteredPosts.length === 0 ? (
+      <div class="text-catppuccin-overlay">
+        <span class="text-catppuccin-yellow">grep:</span> No se encontraron resultados.
+      </div>
+    ) : (
+      <div class="space-y-2" id="posts-list">
+        {filteredPosts.map((post, index) => (
+          <article 
+            class="group border border-catppuccin-surface0 rounded p-4 hover:bg-catppuccin-surface0/30 hover:border-catppuccin-surface1 transition-all"
+            style={`animation: fadeIn 0.3s ease-out ${index * 0.05}s both`}
+          >
+            <a href={`/blog/${post.slug}`} class="block focus:outline-none focus:ring-2 focus:ring-catppuccin-blue rounded">
+              <div class="flex items-start gap-4 flex-wrap">
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center gap-2 mb-1 flex-wrap">
+                    <span class="text-catppuccin-overlay">-rw-r--r--</span>
+                    {post.data.date && (
+                      <time class="text-catppuccin-overlay text-sm">
+                        {formatDate(post.data.date)}
+                      </time>
+                    )}
+                    {post.data.category && (
+                      <span class="text-xs text-catppuccin-mauve">
+                        [{post.data.category}]
+                      </span>
+                    )}
+                  </div>
+                  <h2 class="text-catppuccin-text group-hover:text-catppuccin-blue transition-colors truncate">
+                    <span class="text-catppuccin-green">▶</span> {post.data.title}
+                  </h2>
+                  {post.data.description && (
+                    <p class="text-catppuccin-overlay text-sm mt-1 line-clamp-2">
+                      {post.data.description}
+                    </p>
+                  )}
+                  {post.data.tags && post.data.tags.length > 0 && (
+                    <div class="mt-2 flex flex-wrap gap-2">
+                      {post.data.tags.slice(0, 3).map(tag => (
+                        <span class="text-xs text-catppuccin-subtext">#<span class="text-catppuccin-text">{tag}</span></span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+                <div class="text-catppuccin-blue group-hover:translate-x-1 transition-transform">
+                  →
+                </div>
+              </div>
+            </a>
+          </article>
+        ))}
+      </div>
+    )}
+  </div>
+
+  <div class="mt-8 text-catppuccin-overlay text-sm">
+    <span class="text-catppuccin-green">niko</span><span class="text-catppuccin-overlay">@</span><span class="text-catppuccin-blue">blog</span><span class="text-catppuccin-overlay">:</span><span class="text-catppuccin-mauve">~/blog</span><span class="text-catppuccin-text">$</span>
+    <span class="ml-2">found <span class="text-catppuccin-blue">{filteredPosts.length}</span> posts</span>
+  </div>
+
+  <style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateX(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .line-clamp-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  </style>
+
+  <script>
+    // Búsqueda client-side para sitios estáticos
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const searchQuery = urlParams.get('q')?.toLowerCase().trim() || '';
+      const selectedTag = urlParams.get('tag') || '';
+      const selectedCategory = urlParams.get('category') || '';
+
+      // Si no hay filtros activos, salir
+      if (!searchQuery && !selectedTag && !selectedCategory) {
+        return;
+      }
+
+      const postsContainer = document.getElementById('posts-list');
+      if (!postsContainer) return;
+
+      const posts = postsContainer.getElementsByTagName('article');
+      let visibleCount = 0;
+
+      Array.from(posts).forEach(post => {
+        const titleEl = post.querySelector('h2');
+        const descEl = post.querySelector('p');
+        const tagsEl = post.querySelector('.mt-2.flex.flex-wrap.gap-2');
+
+        let matches = false;
+
+        if (searchQuery) {
+          const titleText = titleEl ? titleEl.textContent.toLowerCase() : '';
+          const descText = descEl ? descEl.textContent.toLowerCase() : '';
+          const tagsText = tagsEl ? tagsEl.textContent.toLowerCase() : '';
+
+          if (titleText.includes(searchQuery) || 
+              descText.includes(searchQuery) || 
+              tagsText.includes(searchQuery)) {
+            matches = true;
+          }
+        } else if (selectedTag) {
+          const tagsText = tagsEl ? tagsEl.textContent : '';
+          if (tagsText.includes(`#${selectedTag}`)) {
+            matches = true;
+          }
+        } else if (selectedCategory) {
+          // La categoría está en el span dentro del flex items-center
+          const categoryEl = post.querySelector('.flex.items-center.gap-2.mb-1.flex-wrap .text-xs.text-catppuccin-mauve');
+          if (categoryEl && categoryEl.textContent === `[${selectedCategory}]`) {
+            matches = true;
+          }
+        }
+
+        if (matches) {
+          post.style.display = '';
+          visibleCount++;
+        } else {
+          post.style.display = 'none';
+        }
+      });
+
+      // Actualizar contador
+      const counterEl = document.querySelector('.mt-8.text-catppuccin-overlay.text-sm');
+      if (counterEl) {
+        counterEl.innerHTML = `
+          <span class="text-catppuccin-green">niko</span><span class="text-catppuccin-overlay">@</span><span class="text-catppuccin-blue">blog</span><span class="text-catppuccin-overlay">:</span><span class="text-catppuccin-mauve">~/blog</span><span class="text-catppuccin-text">$</span>
+          <span class="ml-2">found <span class="text-catppuccin-blue">${visibleCount}</span> posts</span>
+        `;
+      }
+
+      // Mostrar mensaje si no hay resultados visibles
+      if (visibleCount === 0) {
+        const resultsContainer = document.getElementById('search-results-container');
+        if (resultsContainer) {
+          resultsContainer.innerHTML = `
+            <div class="text-catppuccin-overlay">
+              <span class="text-catppuccin-yellow">grep:</span> No se encontraron resultados.
+            </div>
+          `;
+        }
+      }
+    });
+  </script>
+</Layout>

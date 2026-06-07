@@ -1,0 +1,11 @@
+#+title: Port_scan
+#+date: 2026-03-15
+#+description: Artículo sobre Port_scan
+Las técnicas de escaneo de puertos se categorizan según el protocolo de
+comunicación usado.
+
+#+begin_quote
+(*)NOTA: Los escaneos ACK realmente no son para detectar puertos
+abiertos, si no para ver si hay un firewall y/o un IDP/IPS filtrando el
+tráfico.
+#+end_quote

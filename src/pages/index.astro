@@ -1,0 +1,58 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Inicio" description="Un blog sobre tecnología, ciberseguridad y desarrollo web">
+  <div class="space-y-6">
+    <div class="space-y-2">
+      <div class="text-catppuccin-overlay">Last login: {new Date().toLocaleDateString('es-ES', { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' })}</div>
+      <div>
+        <span class="text-catppuccin-green">niko</span><span class="text-catppuccin-overlay">@</span><span class="text-catppuccin-blue">blog</span><span class="text-catppuccin-overlay">:</span><span class="text-catppuccin-mauve">~</span><span class="text-catppuccin-text">$</span>
+        <span class="text-catppuccin-yellow ml-2">whoami</span>
+      </div>
+      <div class="text-catppuccin-text">niko</div>
+    </div>
+
+    <div class="space-y-2">
+      <div>
+        <span class="text-catppuccin-green">niko</span><span class="text-catppuccin-overlay">@</span><span class="text-catppuccin-blue">blog</span><span class="text-catppuccin-overlay">:</span><span class="text-catppuccin-mauve">~</span><span class="text-catppuccin-text">$</span>
+        <span class="text-catppuccin-yellow ml-2">cat README.md</span>
+      </div>
+      <div class="text-catppuccin-text bg-catppuccin-surface0/20 rounded p-4 border border-catppuccin-surface0">
+        <p class="mb-4">
+          <span class="text-catppuccin-mauve"># Bienvenido a mi blog</span>
+        </p>
+        <p class="mb-4 text-catppuccin-subtext">
+          Aquí encontrarás artículos sobre tecnología, ciberseguridad y desarrollo web.
+        </p>
+        <p class="text-catppuccin-overlay">
+          Escribo sobre cosas que me interesan y que creo que pueden ser útiles.
+        </p>
+      </div>
+    </div>
+
+    <div class="space-y-2">
+      <div>
+        <span class="text-catppuccin-green">niko</span><span class="text-catppuccin-overlay">@</span><span class="text-catppuccin-blue">blog</span><span class="text-catppuccin-overlay">:</span><span class="text-catppuccin-mauve">~</span><span class="text-catppuccin-text">$</span>
+        <span class="text-catppuccin-yellow ml-2">ls -la ./contenido</span>
+      </div>
+      <div class="text-catppuccin-text space-y-1">
+        <div><span class="text-catppuccin-mauve">drwxr-xr-x</span> <a href="/blog" class="text-catppuccin-blue hover:text-catppuccin-sapphire transition-colors focus:outline-none focus:ring-2 focus:ring-catppuccin-blue rounded">blog/</a> <span class="text-catppuccin-overlay">artículos sobre tecnología</span></div>
+        <div><span class="text-catppuccin-mauve">drwxr-xr-x</span> <a href="/sobre-mi" class="text-catppuccin-blue hover:text-catppuccin-sapphire transition-colors focus:outline-none focus:ring-2 focus:ring-catppuccin-blue rounded">sobre-mi/</a> <span class="text-catppuccin-overlay">quién soy</span></div>
+      </div>
+    </div>
+
+    <div class="space-y-2">
+      <div>
+        <span class="text-catppuccin-green">niko</span><span class="text-catppuccin-overlay">@</span><span class="text-catppuccin-blue">blog</span><span class="text-catppuccin-overlay">:</span><span class="text-catppuccin-mauve">~</span><span class="text-catppuccin-text">$</span>
+        <span class="text-catppuccin-yellow ml-2">echo "espero que te sea útil"</span>
+      </div>
+      <div class="text-catppuccin-text">espero que te sea útil</div>
+    </div>
+
+    <div>
+      <span class="text-catppuccin-green">niko</span><span class="text-catppuccin-overlay">@</span><span class="text-catppuccin-blue">blog</span><span class="text-catppuccin-overlay">:</span><span class="text-catppuccin-mauve">~</span><span class="text-catppuccin-text">$</span>
+      <span class="animate-pulse">█</span>
+    </div>
+  </div>
+</Layout>

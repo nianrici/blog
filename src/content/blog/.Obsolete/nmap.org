@@ -1,0 +1,36 @@
+#+title: Nmap
+#+date: 2026-03-15
+#+description: Artículo sobre Nmap
+** Descubrir equipos en la red local:
+:PROPERTIES:
+:CUSTOM_ID: descubrir-equipos-en-la-red-local
+:END:
+#+begin_src ruby
+    # nmap -PE -sn {IP/subnet}
+    nmap -PE -sn 10.1.1.0/24
+#+end_src
+
+*Output:*
+
+#+begin_src ruby
+    Starting Nmap 7.93 ( https://nmap.org ) at 2022-12-13 20:07 CET
+    Nmap scan report for +*REDACTED*+
+    Host is up (0.00053s latency).
+    Nmap scan report for +*REDACTED*+
+    Host is up (0.00029s latency).
+    Nmap scan report for +*REDACTED*+
+    Host is up (0.0029s latency).
+    Nmap scan report for +*REDACTED*+
+    Host is up (0.00046s latency).
+    Nmap scan report for +*REDACTED*+
+    Host is up (0.00083s latency).
+    Nmap scan report for +*REDACTED*+
+    Host is up (0.00027s latency).
+    Nmap scan report for +*REDACTED*+
+    Host is up (0.022s latency).
+    Nmap scan report for +*REDACTED*+
+    Host is up (0.000038s latency).
+    Nmap scan report for +*REDACTED*+
+    Host is up (0.0012s latency).
+    Nmap done: 256 IP addresses (9 hosts up) scanned in 1.44 seconds
+#+end_src
