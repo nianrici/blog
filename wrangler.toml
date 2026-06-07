@@ -1,0 +1,8 @@
+# Cloudflare Pages configuration
+# https://developers.cloudflare.com/pages/functions/wrangler-configuration/
+
+[build]
+command = "bun run build"
+
+[build.environment]
+NODE_VERSION = "20"

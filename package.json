@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "type": "module",
   "scripts": {
     "dev": "astro dev",
@@ -23,7 +26,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.27",
-    "openclaw": "^2026.3.13",
     "postcss": "^8.5.8",
     "tailwindcss": "3"
   }
